@@ -151,7 +151,6 @@ body, html {
             padding: 0.5em;
         }
         .menu{
-            max-height: 0;
             transition: max-height .5s ease-out;
         }
         .menu-btn{
