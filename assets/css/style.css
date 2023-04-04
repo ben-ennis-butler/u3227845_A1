@@ -212,21 +212,27 @@ body, html {
         @media (max-width:900px) {
             nav .menu-btn{
                 display: block;
+                z-index: 100;
+                position: fixed;
               }
             #click:checked ~ .menu-btn:before{
                 content: "\f00d";
             }
-            .menu{
+
+            .menucontainer{
                 position: fixed;
-                top: 80px;
+                top: 0px;
                 left: -100%;
                 background: rgb(18,18,18);
                 height: 100%;
+                padding-top: 80px;
                 width: 100%;
                 text-align: center;
                 display: block;
+                z-index: 80;
             }
-            #click:checked ~ ul{
+
+            .side-menu:checked ~ .test{
                 left: 0;
             }
             .menu li{
